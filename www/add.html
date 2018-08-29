@@ -1,0 +1,100 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="back link">
+                <i class="icon icon-back"></i>
+                <span>Back</span>
+            </a>
+        </div>
+        <div class="center sliding">Add Task</div>
+        <div class="right">
+            <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <div data-page="add" class="page">
+        <div class="page-content">
+            <div class="content-block">
+ <!----------------------------------------------------------------------->              
+  <form id="workout-form" class="ajax-submit">
+<div class="list-block">  <!-----extra been add to fix the form ------>
+  <ul>
+    <!----------------name of workout ----->   
+    <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-title label">Title</div>
+          <div class="item-input">
+       
+            <input type="text"  placeholder="Task title" id="title">
+          </div>
+        </div>
+      </div>
+    </li>
+      
+  <!----------------date of workout ----->   
+   <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-title label">Date</div>
+          <div class="item-input">
+            <input type="date" placeholder="Task Date" id="date">
+          </div>
+        </div>
+      </div>
+    </li>  
+      
+    <!----------------Type of workout smart selector----->   
+     <li>
+      <a href="#" class="item-link smart-select">
+        <!-- select -->
+        <select name="type" id="type">
+          <option value="background:#009900;">Important</option>
+          <option value="background:#0ba98f;">Second priority</option>    
+          <option value="background:transparent;">Not Important</option>
+        </select>
+        <div class="item-content">
+          <div class="item-inner">
+            <!-- Select label -->
+            <div class="item-title">Task Type</div>
+            <!-- Selected value, not required prefilled -->
+            <div class="item-after" >Important</div>
+          </div>
+        </div>
+      </a>
+    </li>
+      
+    <!----------------Length of workout ----->   
+    <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-input">
+            <!-- Make sure that input have "name attrobute" -->
+             <textarea class="resizable" placeholder="Description" id="length"></textarea>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+    
+<br>
+
+<div class="row">
+     
+  <input type="submit" value="save" class="button active jbtn">
+   
+    </div>
+       
+</div> <!--------------end of item-content div -----> 
+ 
+
+</form>              
+<!---------------------------------------------------------------------------->                
+            </div>
+        </div>
+    </div>
+</div>
