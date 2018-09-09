@@ -20,7 +20,6 @@ $$(document).on('deleted', '.remove-callback', function(){
 });
 
 
-
 /*-------------------Device Ready Event ----(3)-------------*/
 $$(document).on('deviceready', function() {
   
